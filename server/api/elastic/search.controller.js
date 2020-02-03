@@ -37,12 +37,12 @@ exports.vehicles_test = async (req, res) => {
   if(!ping()) return;
 
   const { body } = await client.search({
-    index: 'vehicles_test',
+    index: 'inventory_type,vehicles_test',
     type: '_doc',
     body: {
       query: {
         multi_match: {
-          query: 'car'
+          query: 'SUV rental'
         }
       }
     }
