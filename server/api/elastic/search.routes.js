@@ -1,4 +1,4 @@
-const controller = require('./elastic.controller');
+const controller = require('./search.controller');
 const express = require('express');
 const router = express.Router();
 
